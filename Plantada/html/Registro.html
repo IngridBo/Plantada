@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://file.myfontastic.com/akGazC9c9vvwPD9yjWCh8n/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/Registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <div class="container--flex"></div>
+        <span class="icon-menu" id="btnmenu"></span>
+        <ul class="menu" id="menu">
+
+            <li class="menu__item"><a href="/html/AcercaDe.html" class="menu__link ">Nosotros</a></li>
+            <li class="menu__item"><a href="/html/Productos.html" class="menu__link">Productos</a></li>
+            <li class="menu__item"><a href="/html/Contáctanos.html" class="menu__link">Contacto</a></li>
+
+
+        </ul>
+    </nav>
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="javascript:void(0)" id="formSubmitLogin" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="email" name="email" placeholder="Correo Electronico" id="email" autocomplete="true"
+                        required>
+                    <input type="password" placeholder="Contraseña" id="passwordLogin" autocomplete="true" required>
+                    <button>Login</button>
+                </form>
+
+                <!--Register-->
+                <form action="" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Regístrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/JS/registro.js"></script>
+</body>
+
+</html>

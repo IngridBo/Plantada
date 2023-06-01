@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://file.myfontastic.com/akGazC9c9vvwPD9yjWCh8n/icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/css/contacto.css">
+  <title>Contáctanos</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container container--flex">
+      <div class="logo-container column--50">
+        <h1 class="logo"></h1>
+      </div>
+      <div class="main-header__contactInfo column--50">
+        <p class="main-header__contactInfo__phone">
+          <span class="icon-phone">304-999-9990</span>
+        </p>
+        <p class="main-header__contactInfo__address">
+          <span class="icon-location">Horario de atencion | Lunes a Viernes |</span>
+        </p>
+      </div>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container--flex"></div>
+    <span class="icon-menu" id="btnmenu"></span>
+    <ul class="menu" id="menu">
+
+      <li class="menu__item"><a href="/html/AcercaDe.html" class="menu__link ">Nosotros</a></li>
+      <li class="menu__item"><a href="/html/Productos.html" class="menu__link">Productos</a></li>
+      <li class="menu__item"><a href="/html/Contáctanos.html" class="menu__link menu__link--select">Contacto</a></li>
+    </ul>
+
+  </nav>
+
+  <section class="banner">
+    <img src="/assets/Contactanos.jpg" alt="contactanos" class="banner__img">
+    <div class="banner__content"> Contacta Con Nosotros</div>
+  </section>
+
+  <main class="main">
+    <section class="group contact">
+      <h2 class="group__title"></h2>
+      <div class="container container--flex">
+        <div class="contact-information column column--50">
+          <h3 class="column__title">Déjanos Un Mensaje</h3>
+
+          <p class="column__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora officia harum
+            doloribus nobis perferendis minus voluptatibus ratione dolor est, dignissimos aperiam autem repudiandae
+            ullam, natus voluptatum error quas. Quisquam, assumenda.</p>
+          <p class="column__txt"><span class="icon-phone"></span>Ubicación</p>
+          <p class="column__txt"><span class="icon-mail"></span>consulta@</p>
+        </div>
+        <!-- FORMULARIO -->
+
+        <form action="https://formsubmit.co/bonilla.1ingrid@gmail.com" method="post"
+          class="formulario column column--50" id="formulario">
+
+          <label for="" class="formulario__label">Nombre:</label><input type="text" class="formulario__input-txt"
+            name="name" id="name" placeholder="Nombre">
+
+
+          <label for="" class="formulario__label">Correo:</label><input type="text" class="formulario__input-txt"
+            name="email" id="email" placeholder="Email">
+
+
+          <label for="" class="formulario__label">Teléfono:</label><input type="number" class="formulario__input-txt"
+            name="phone" id="phone" placeholder="Teléfono">
+
+
+          <label for="" class="formulario__label">Mensaje:</label>
+          <textarea name="message" id="message" placeholder="Mensaje:" cols="30" rows="10"
+            class="formulario__textarea"></textarea>
+
+          <button type="submit" class="btn formulario__btn" value="Enviar"
+            onclick="return validateForm()">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container container--flex">
+      <div class="column column--33">
+        <h2 class="column__title">¿Por qué Visitarnos?</h2>
+        <p class="column__txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quibusdam rerum fugiat
+          delectus corporis labore dolorem totam quo id perspiciatis quia esse aperiam accusamus eum nostrum est, omnis
+          necessitatibus dignissimos?</p>
+      </div>
+      <div class="column column--33">
+        <h2 class="column__title">Siguenos en nuestras redes</h2>
+        <p class="column__txt"><a href="" class="icon-facebook"></a>Facebook</p>
+
+        <p class="column__txt"><a href="" class="icon-insta">Siguenos en Instagram</a>
+        </p>
+      </div>
+      <p class="copy">@ Derechos reservados 2023</p>
+    </div>
+  </footer>
+
+  <script src="/JS/validacion.js"></script>
+  <script src="/JS/menu.js"></script>
+</body>
+
+</html>
